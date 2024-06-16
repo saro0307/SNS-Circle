@@ -1,0 +1,8 @@
+/path/to/your/project/
+├── app.py
+├── templates/
+│   ├── login.html
+│   ├── home.html
+│   └── dashboard.html
+└── static/
+    └── styles.css
