@@ -1,9 +1,0 @@
-#login page#
-
-├── app.py
-├── templates/
-│   ├── login.html
-│   ├── home.html
-│   └── dashboard.html
-└── static/
-    └── styles.css
