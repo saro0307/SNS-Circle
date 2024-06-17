@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button id="prev-month" onclick="changeMonth(-1)">&#9664;</button>
+            <div id="month-year">{{ month }} {{ year }}</div>
+            <button id="next-month" onclick="changeMonth(1)">&#9654;</button>
+        </div>
+        <div id="calendar-days">
+            {{ calendar_html | safe }}
+        </div>
+    </div>
+    <script>
+        function changeMonth(direction) {
+            let year = parseInt('{{ year }}');
+            let month = parseInt('{{ month }}');
+            month += direction;
+            if (month < 1) {
+                month = 12;
+                year--;
+            } else if (month > 12) {
+                month = 1;
+                year++;
+            }
+            window.location.href = `/${year}/${month}`;
+        }
+    </script>
+</body>
+</html>
+
