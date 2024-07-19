@@ -1,3 +1,3 @@
 # SNS-circle
 
-Details yet to be updated
+Details yet to be updated.
