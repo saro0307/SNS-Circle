@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Welcome to the Announcement Medium</h1>
+    {% if announcement %}
+        <h2>Latest Announcement:</h2>
+        <p>{{ announcement.content }}</p>
+    {% else %}
+        <p>No announcements yet.</p>
+    {% endif %}
+{% endblock %}

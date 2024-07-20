@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Post Announcement</h1>
+    <form method="POST">
+        <div>
+            <label for="content">Announcement:</label>
+            <textarea id="content" name="content" required></textarea>
+        </div>
+        <button type="submit">Post</button>
+    </form>
+{% endblock %}
