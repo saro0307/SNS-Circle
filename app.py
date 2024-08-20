@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 
-app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app = Flask(__name__, template_folder="templates")
+app.secret_key = 'Asdf@1234'
 
 # In-memory user storage for demonstration purposes
 users = {
@@ -12,7 +12,7 @@ users = {
 def home():
     if 'username' in session:
         return render_template('home.html')
-    return redirect(url_for('login_page'))
+    return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
