@@ -8,12 +8,6 @@ body {
     margin: 0;
 }
 
-#div1 {
-    background: url(C:\projects\Html\SNS-circle\src\chat-icon.png);
-    background-size: 100px 80px;
-    background-repeat: no-repeat;
-  } 
-
 .login-container {
     background-color: #000000;
     padding: 20px;
