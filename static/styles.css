@@ -8,10 +8,16 @@ body {
     margin: 0;
 }
 
+#div1 {
+    background: url(C:\projects\Html\SNS-circle\src\chat-icon.png);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+  } 
+
 .login-container {
     background-color: #000000;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
@@ -67,7 +73,7 @@ button:hover {
 }
 
 .flash.danger {
-    background-color: #f8d7da;
+    background-color: #e40909;
     color: #721c24;
 }
 
