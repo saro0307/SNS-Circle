@@ -3,68 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Sidebar Layout</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="../static/images/user-profile.png">
-                        <div class="user-name">
-                            <ul>
-                                <li id="username">Josue</li>
-                                <li>&commat;josueaco</li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/groups.png" alt="groups"></li>
-                        <li>Groups</li>
-                    </ul>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile"><a href="#">
+                <img src="../static/images/user-profile.png" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">John Doe</h2>
+                <p class="username">@johndoe</p>
                 </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/menu.png" alt="menu"></li>
-                        <li>Summary</li>
-                    </ul>
-                </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/chat.png" alt="chat"></li>
-                        <li>Chat</li>
-                    </ul>
-                </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/calendar.png" alt="calendar"></li>
-                        <li>Calendar</li>
-                    </ul>
-                </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/exit.png" alt="exit"></li>
-                        <li>Logout</li>
-                    </ul>
-                </a>
-                </li>
-                <li><a href="#">
-                    <ul>
-                        <li><img src="../static/images/settings.png" alt="settings"></li>
-                        <li>Settings</li>
-                    </ul>
-                </a>
-                </li>
-            </ul>
-        </div>
+            </div>
+            <br/>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">
+                        <img src="../static/images/groups.png" class="icon">
+                        <p>Groups</p></a></li>
+                    <li><a href="#">
+                        <img src="../static/images/menu.png" class="icon">
+                        <p>Summary</p></a></li>
+                    <li><a href="#">
+                        <img src="../static/images/chat.png" class="icon">
+                        <p>Chat</p></a></li>
+                    <li><a href="#">
+                        <img src="../static/images/calendar.png" class="icon">
+                        <p>Calendar</p></a></li>
+                    <hr>
+                    <li><a href="#">
+                        <img src="../static/images/exit.png" class="icon">
+                        <p>Logout</p></a></li>
+                    <li><a href="#">
+                        <img src="../static/images/settings.png" class="icon">
+                        <p>Settings</p></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>Welcome to the Dashboard</h1>
+            <p>This is the main content area.</p>
+        </main>
     </div>
 </body>
 </html>
