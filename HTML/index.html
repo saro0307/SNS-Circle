@@ -20,32 +20,66 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#">
-                        <img src="../static/images/groups.png" class="icon">
-                        <p>Groups</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/groups.png" class="icon">
+                            <p>Groups</p>
+                        </div>
+                    </a></li>
                     <li><a href="#">
-                        <img src="../static/images/menu.png" class="icon">
-                        <p>Summary</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/menu.png" class="icon">
+                            <p>Summary</p>
+                        </div>
+                    </a></li>
                     <li><a href="#">
-                        <img src="../static/images/chat.png" class="icon">
-                        <p>Chat</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/chat.png" class="icon">
+                            <p>Chat</p>
+                        </div>
+                    </a></li>
                     <li><a href="#">
-                        <img src="../static/images/calendar.png" class="icon">
-                        <p>Calendar</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/calendar.png" class="icon">
+                            <p>Calendar</p>
+                        </div>
+                    </a></li>
                     <hr>
                     <li><a href="#">
-                        <img src="../static/images/exit.png" class="icon">
-                        <p>Logout</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/exit.png" class="icon">
+                            <p>Logout</p>
+                        </div>
+                    </a></li>
                     <li><a href="#">
-                        <img src="../static/images/settings.png" class="icon">
-                        <p>Settings</p></a></li>
+                        <div class="hover">
+                            <img src="../static/images/settings.png" class="icon">
+                            <p>Settings</p>
+                        </div>
+                    </a></li>
                 </ul>
             </nav>
         </aside>
 
         <main class="content">
-            <h1>Welcome to the Dashboard</h1>
-            <p>This is the main content area.</p>
+            <div class="top-bar">
+                <div class="search-container">
+                    <input type="search" class="search-bar" placeholder="Search..." id="search-input">
+                    <span class="search-icon" id="search-icon">
+                        <img src="../static/images/search.png" alt="Search" id="icon-img">
+                    </span>
+                </div>
+                <div class="greeting">Hello, John!</div>
+            </div>
+            <h1 class="heading">Your Subjects</h1>
+            <div class="image-gallery">
+                <img src="static/images/image1.png" alt="Image 1">
+                <img src="static/images/image2.png" alt="Image 2">
+                <img src="static/images/image3.png" alt="Image 3">
+                <img src="static/images/image4.png" alt="Image 4">
+            </div>
         </main>
     </div>
+    <script src="../JS/script.js">
+    </script>
 </body>
 </html>
