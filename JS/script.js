@@ -28,8 +28,3 @@ searchInput.addEventListener('input', () => {
         iconImg.style = "display: none";
     }
 });
-
-document.querySelector('.card-gallery-container').addEventListener('wheel', function (event) {
-        event.preventDefault();
-        this.scrollLeft += event.deltaY;
-    });
