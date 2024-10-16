@@ -18,6 +18,7 @@ body {
 
 .sidebar {
     width: 10%;
+    height: 100vh;
     color: #ecf0f1;
     border-right: #95a5a6;
     border-style: solid;
@@ -26,6 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    overflow-y: hidden;
 }
 
 .profile {
@@ -116,10 +119,13 @@ hr {
 }
 
 .content {
+    margin-left: 10%;
     width: 90%;
     padding: 20px;
     background-color: #ffffff;
     color: #2c3e50;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .top-bar {
@@ -168,29 +174,31 @@ hr {
 }
 
 .heading {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .card-gallery-container {
     width: 100%;
-    overflow-x: hidden;
-    white-space: nowrap;
     padding-bottom: 10px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .card-gallery {
-    display: inline-flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
     padding: 10px;
 }
 
 .card {
-    width: 250px;
-    height:320px;
+    width: 360px;
+    height:400px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 8px 4px 18px rgba(116, 115, 115, 0.1);
@@ -207,8 +215,8 @@ hr {
 }
 
 .card-img {
-    width: 114%;
-    height: 150px;
+    width: 109%;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-top: -14px;
@@ -221,7 +229,7 @@ hr {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 28px;
     color: #2c3e50;
     margin-bottom: 5px;
 }
@@ -231,7 +239,7 @@ hr {
     border-style: solid;
     width: 55%;
     margin-left: 22%;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
     color: #5f5e5e;
     border-color: #dcd9d9fc;
@@ -248,7 +256,7 @@ hr {
     position: relative;
     margin-bottom: 5px;
     margin-top: 30px;
-    margin-left: 11px;
+    margin-left: 15px;
 }
 
 .progress {
@@ -260,9 +268,9 @@ hr {
 
 .progress-percentage {
     position: relative;
-    top: 5px;
-    right: 52px;
-    font-size: 14px;
+    top: 8px;
+    right: 93px;
+    font-size: 16px;
     color: #a2a3a4;
 }
 
@@ -270,3 +278,14 @@ hr {
     color: rgb(20, 19, 19);
 }
 
+@media (max-width: 768px) {
+    .card-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-gallery {
+        grid-template-columns: 1fr;
+    }
+}
